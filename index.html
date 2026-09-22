@@ -8,60 +8,65 @@
 <body>
 
 <!--CABEÇALHO-->
-    <header>
-        <h1>Code&Corte</h1>
-        <p>Beleza e bem-estar ao seu alcance.</p>
+    <header class="header">
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Agenda</a>
-            <a href="#">Salão</a>
-            <a href="#">Serviços</a>
-            <a href="#">Perfil</a>
-        </nav>
+        <div class="header-content">
+        
+            <h1 class="header-logo">
+            <a href="#">LOGO</a>
+            </h1>
+        
+            <input
+                class="header-search"
+                type="text" 
+                placeholder="Buscar serviço ou estabelecimento"
+            >
+        </div>
+
     </header>
 
 <!--BARRA DE PESQUISA-->
     <main>
-        <section>
-            <h2>Agende seu próximo atendimento</h2>
-            <p>Encontre os melhores profissionais e estabelecimentos de beleza.</p>
-            <p>Agende seu horário de forma rápida e fácil.</p>
-            <input type="text" placeholder="Busque por serviço ou estabelecimento">
-            <button>Buscar</button>
 
+        <section class="hero">
+            <h2 class="hero-title">Seu estilo, no seu tempo</h2>
+            <p class="hero-description">Agende serviços de beleza de forma simples e rápida</p>
+            <button class="hero-button">Agendar agora</button>
         </section>
 
-        <section>
-            <h2>Nossos serviços</h2>
-            <ul>
-                <li><a href="#">Corte</a></li>
-                <li><a href="#">Barba</a></li>
-                <li><a href="#">Unhas</a></li>
-                <li><a href="#">Cabelo</a></li>
-                <li><a href="#">Sobrancelha</a></li>
+        <section class="services">
+            <h2 class="services-title">Serviços</h2>
+            <ul class="services-list">
+                <li class="service-item"><a href="#">Corte</a></li>
+                <li class="service-item"><a href="#">Barba</a></li>
+                <li class="service-item"><a href="#">Unhas</a></li>
+                <li class="service-item"><a href="#">Cabelo</a></li>
+                <li class="service-item"><a href="#">Sobrancelha</a></li>
+
             </ul>
+
+                <a class="services-all" href="#">Ver todos os serviços</a>
         </section>
 
-        <section>
-            <h2>Estabelecimentos em destaque</h2>
+        <section class="estabelecimentos">
+            <h2 class="estabelecimentos-destaque">Estabelecimentos em destaque</h2>
             
-            <ul>
-                <li> <img src="imagembarber1.jpg" height="80px" alt="Logo do Black Barber">
+            <ul class="estabelecimentos-lista">
+                <li class="estabelecimento"> 
                     <a href="#">Black Barber</a>
                     Avaliação: 4,8
                     Tatuapé - São Paulo
                     Corte, barba e mais
                 </li>
             
-                <li>
+                <li class="estabelecimento">
                     <a href="#">Style Hair</a>
                     Avaliação: 4,6
                     Mooca - São Paulo
                     Cabelo, unhas e mais
                 </li>
 
-                <li>
+                <li class="estabelecimento">
                     <a href="#">Top Barber</a>
                     Avaliação: 4,7
                     Anália Franco - São Paulo
@@ -71,46 +76,17 @@
 
         </section>
 
-        <section>
-            <h2>Acessos rápidos</h2>
-            <ul>
-                <li>
-                    <a href="#">Meus agendamentos</a>
-                    Veja e gerencie seus horários.
-                </li>
-
-                <li>
-                    <a href="#">Cadastrar salão</a>
-                    Cadastre seu estabelecimento.
-                </li>
-
-                <li>
-                    <a href="#">Meu perfil</a>
-                    Edite seus dados pessoais.
-                </li>
-
-                <li>
-                    <a href="#">Serviços</a>
-                    Encontre serviços disponíveis.
-                </li>
-            </ul>
-        </section>
-
     </main>
 
 <!--RODAPÉ-->
-    <footer>
-        <h3>Code&Corte</h3>
-        <p>Encontre profissionais e agende seu atendimento</p>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Agenda</a>
+            <a class="nav-link" href="#">Serviços</a>
+            <a class="nav-link" href="#">Perfil</a>
+        </nav>
 
-        <ul>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Ajuda</a></li>
-            <li><a href="#">Termos de uso</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <p>© 2026 Code&Corte</p>
     </footer>
 
 </body>
