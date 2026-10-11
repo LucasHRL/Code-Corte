@@ -3,13 +3,22 @@
 }
 body {
     margin: 0;
+    background-color: #F4F8FF;
 }
 .header-logo {
     margin: 0;
+    font-size: 0;
+}
+.header-logo img {
+    width: 110px;
+    height: auto;
+    display: block;
 }
 .header-content {
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 .header {
     flex-wrap: wrap;
@@ -18,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
 .header-search {
@@ -41,10 +50,13 @@ body {
     display: flex;
     gap: 20px;
     padding: 8px;
+    margin-top: 0;
+    margin-top: -30px;
 }
 .header-nav a {
     text-decoration: none;
     padding: 8px;
+    color: #050B16;
 }
 .header-nav a:hover {
     text-decoration: underline;
@@ -54,33 +66,41 @@ body {
     max-width: 1200px;
     margin: 60px auto;
     text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EAF3FF 100%);
+    border-radius: 16px;
 }
 .hero-title {
     font-size: clamp(28px, 4vw, 48px);
     margin-bottom: 15px;
+    color: #050B16;
 }
 .hero-description {
     font-size: clamp(14px, 1.7vw, 20px);
     margin-bottom: 25px;
+    color: #111820;
 }
 .hero-button {
     padding: 12px 28px;
     font-size: clamp(14px, 1.4vw, 16px);
     cursor: pointer;
     border-radius: 8px;
-    transition: transform 0.2s ease;
-    background-color: #222;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: #007bff;
     color: white;
     border: none;
 }
 .hero-button:hover {
     transform: translateY(-2px);
+    background-color: #0066d6;
 }
 .services {
     padding: 0 16px;
     max-width: 1200px;
     margin: 60px auto;
     text-align: center;
+}
+.services-title {
+    color: #050B16;
 }
 .services-list {
     display: flex;
@@ -92,11 +112,22 @@ body {
 }
 .service-item {
     padding: 15px 25px;
-    border: 1px solid #ddd;
+    border: 1px solid #D9E2EE;
+    border-radius: 14px;
     width: clamp(110px, 20vw, 140px);
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(5, 11, 22, 0.06);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.service-item:hover {
+    border-color: #007BFF;
+    box-shadow: 0 8px 20px rgba(5, 11, 22, 0.10);
+    transform: translateY(-4px);
 }
 .service-item a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #050B16;
+    display: block;
 }
 .service-item a:hover {
     text-decoration: underline;
@@ -104,9 +135,12 @@ body {
 .services-all {
     display: inline-block;
     margin-top: 25px;
+    color: #007bff;
+    transition: color 0.2s ease;
 }
 .services-all:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
 .estabelecimentos {
     padding: 0 16px;
@@ -129,22 +163,35 @@ body {
     flex: 1;
     min-width: 250px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #D9E2EE;
     min-height: 150px;
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(5, 11, 22, 0.06);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.estabelecimento:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.12);
 }
 .estabelecimento p {
     margin: 8px 0;
 }
 .estabelecimentos-destaque {
     margin: 0 0 35px;
+    color: #050B16;
 }
 .estabelecimento a {
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
+    color: #050B16;
+    text-decoration: none;
+}
+.estabelecimento a:hover {
+    color: #007bff;
 }
 .service-item:hover {
     transform: translateY(-3px);
