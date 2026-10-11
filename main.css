@@ -192,10 +192,10 @@ body {
     }
     .header-nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 0;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 0px;
+        width: 100%;
     }
     .services-list {
         justify-content: center;
