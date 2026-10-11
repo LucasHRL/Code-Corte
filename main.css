@@ -12,6 +12,7 @@ body {
     align-items: center;
 }
 .header {
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -21,7 +22,8 @@ body {
     border-bottom: 1px solid #ddd;
 }
 .header-search {
-    width: 400px;
+    max-width: 100%;
+    width: 40vw;
     height: 40px;
     padding: 0 12px;
     margin-left: 15px;
@@ -48,21 +50,22 @@ body {
     text-decoration: underline;
 }
 .hero {
+    padding: 0 16px;
     max-width: 1200px;
     margin: 60px auto;
     text-align: center;
 }
 .hero-title {
-    font-size: 48px;
+    font-size: clamp(28px, 4vw, 48px);
     margin-bottom: 15px;
 }
 .hero-description {
-    font-size: 20px;
+    font-size: clamp(14px, 1.7vw, 20px);
     margin-bottom: 25px;
 }
 .hero-button {
     padding: 12px 28px;
-    font-size: 16px;
+    font-size: clamp(14px, 1.4vw, 16px);
     cursor: pointer;
     border-radius: 8px;
     transition: transform 0.2s ease;
@@ -74,12 +77,14 @@ body {
     transform: translateY(-2px);
 }
 .services {
+    padding: 0 16px;
     max-width: 1200px;
     margin: 60px auto;
     text-align: center;
 }
 .services-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     list-style: none;
@@ -88,7 +93,7 @@ body {
 .service-item {
     padding: 15px 25px;
     border: 1px solid #ddd;
-    width: 140px;
+    width: clamp(110px, 20vw, 140px);
 }
 .service-item a {
     text-decoration: none;
@@ -104,6 +109,7 @@ body {
     text-decoration: underline;
 }
 .estabelecimentos {
+    padding: 0 16px;
     max-width: 1200px;
     margin: 60px auto;
     text-align: center;
@@ -111,6 +117,7 @@ body {
 .estabelecimentos-lista {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     align-items: stretch;
@@ -120,6 +127,7 @@ body {
 }
 .estabelecimento {
     flex: 1;
+    min-width: 250px;
     padding: 20px;
     border: 1px solid #ddd;
     min-height: 150px;
@@ -148,4 +156,57 @@ body {
 .estabelecimento {
     transition: transform 0.2s ease;
     border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    .hero-title {
+        margin-bottom: 10px;
+    }
+    .hero-description {
+        margin-bottom: 18px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 16px;
+        gap: 8px;
+
+    }
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 12px;
+        width: 100%;
+    }
+    .header-search {
+        width: 100%;
+        min-width: 0;
+    }
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 0;
+    }
+    .services-list {
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+        gap: 12px;
+    }
+    .service-item {
+        width: 140px;
+    }
+    .estabelecimento {
+        width: 100%;
+    }
 }
